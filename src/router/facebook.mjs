@@ -1,5 +1,6 @@
 import passport from 'passport'
 import facebook from 'passport-facebook'
+import _ from 'lodash'
 
 const options = {
     clientID: process.env.FACEBOOK_CLIENT_ID,
@@ -13,11 +14,11 @@ function serialization(user, done) {
 }
 
 function getEmail(profile) {
-    return (profile.emails && profile.emails[0]) ? profile.emails[0].value : null
+    return (_.isEmpty(profile.emails)) ? null : profile.emails[0].value
 }
 
 function getPhoto(profile) {
-    return (profile.photos && profile.photos[0]) ? profile.photos[0].value : null
+    return (_.isEmpty(profile.photos)) ? null : profile.photos[0].value
 }
 
 function getName(profile) {

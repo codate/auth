@@ -12,5 +12,3 @@ passport.use(new jwt.Strategy(opts, (payload, done) => {
         email: payload.email
     })
 }))
-
-export default passport

@@ -1,6 +1,6 @@
 import _ from 'lodash'
 import Token from '../entity/Token.mjs'
-import emailClient from '../../repository/EmailClient.mjs'
+import {emailClient} from '@codate/commons'
 import userRepository from '../../repository/UserRepository.mjs'
 
 const TEMPLATE_NAME = 'FORGET_PASSWORD'

@@ -1,6 +1,6 @@
 import Token from '../entity/Token.mjs'
 import userRepository from '../../repository/UserRepository.mjs'
-import emailClient from '../../repository/EmailClient'
+import {emailClient} from '@codate/commons'
 
 const TEMPLATE_NAME = 'REGISTER_EMAIL'
 

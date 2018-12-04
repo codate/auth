@@ -1,7 +1,7 @@
 import Joi from 'joi'
 import validate from 'express-validation'
 import express from 'express'
-import Responder from '../common/Responder.mjs'
+import {Responder} from '@codate/commons'
 import UpdateUser from '../business/usecase/UpdateUser.mjs'
 
 const schema = {

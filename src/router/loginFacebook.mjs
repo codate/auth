@@ -1,7 +1,7 @@
 import express from 'express'
 import passport from 'passport'
 import LoginSocial from '../business/usecase/LoginSocial.mjs'
-import Responder from '../common/Responder.mjs'
+import {Responder} from '@codate/commons'
 
 const router = express.Router()
 router.get('/auth/facebook', passport.authenticate('facebook', { authType: 'rerequest', scope: ['email','public_profile'] }))
