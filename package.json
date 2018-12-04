@@ -16,7 +16,7 @@
     "url": "git@github.com:codate/auth.git"
   },
   "dependencies": {
-    "@codate/commons": "^2.0.0",
+    "@codate/commons": "^2.5.0",
     "axios": "^0.18.0",
     "bcrypt": "^2.0.1",
     "body-parser": "^1.18.3",
